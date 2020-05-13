@@ -31,6 +31,7 @@ def roll(dice, number, mod=0):
     roll = 0
     for i in range(1, number+1):
         roll += randint(1,dice)
+    # roll = [randint(1,dice) for x in range(1, number+1)]
     
     if mod != 0:
         output = roll + int(mod)
