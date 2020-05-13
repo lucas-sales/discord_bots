@@ -1,6 +1,8 @@
+from secret import TOKEN
 import discord
 from discord.ext import commands
 from random import randint
+
 
 PREFIX              = "/"
 BOT_MESSAGE_INIT    = "bot ready"
@@ -37,4 +39,4 @@ def roll(dice, number, mod=0):
         output = roll
         return f'({output} + 0) = {output}'
 
-client.run("NzA5NDAwNzY0MDc4MDk2NDA3.XrlYuA.9YypSwD9pv0uXocoIB16JcYbpiM")
+client.run(TOKEN)
